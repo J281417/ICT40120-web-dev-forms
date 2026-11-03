@@ -9,54 +9,47 @@
         <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
     </head>
 
-    <header style="background-color: white;">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <a class="navbar-item" href="./home.html"><strong>Cat Whats-The-Facts</strong></a>
-            <a class="navbar-item" href="./home.html">Home</a>
-            <a class="navbar-item" href="./about-us.html">About Us</a>
-            <a class="navbar-item" href="./contact-us.html">Contact Us</a>
-            <a class="navbar-item" href="./register.html">Register</a>
-        </nav>
-    </header>
-
-
 	<body>
-		<section class="section">
-			<div class="container">
-				<form action="" method="post" id="theForm">
-					<fieldset class="field">
-						<legend class="title is-4">Register</legend>
-						<!-- <p>All fields are required.</p> -->
-						<div class="field">
-							<label class="label" for="firstName">Name</label>
-							<div class="control">
-								<input class="input" class type="text" name="firstName" id="firstName">
-							</div>
+		<header style="background-color: white;">
+			<nav class="navbar">
+				<a class="navbar-item" href="./home.html"><strong>Cat Whats-The-Facts</strong></a>
+				<a class="navbar-item" href="./home.html">Home</a>
+				<a class="navbar-item" href="./about-us.html">About Us</a>
+				<a class="navbar-item" href="./contact-us.html">Contact Us</a>
+				<a class="navbar-item" href="./register.html">Register</a>
+			</nav>
+		</header>
+
+		<div class="container">
+			<form action="javascript:void(0);" method="post" id="theForm">
+				<fieldset class="field">
+					<legend class="title is-4">Register</legend>
+					<!-- <p>All fields are required.</p> -->
+					<div class="field">
+						<label class="label" for="firstName">Name</label>
+						<div class="control">
+							<input class="input" type="text" name="firstName" id="firstName">
 						</div>
-						<div class="two">
-							<label class="label" for="email">Email Address<span class="tooltip">In a valid email format. Example joe.bloggs@testemail.com</span></label>
-							<div class="control">
+					</div>
+					<div class="two">
+						<label class="label" for="email">Email Address<span class="tooltip">In a valid email format. Example joe.bloggs@testemail.com</span></label>
+						<div class="control">
 							<input class="input" type="email" name="email" id="email">
-							</div>
 						</div>
-						<div class="one">
-							<label class="checkbox">
-							<input type="checkbox" name="terms" id="terms" required>&nbsp;I agree to the terms, whatever
-							they are.</div>
-						<div class="field">
-							<div class="control">
-								<input
-									type="submit"
-									value="Submit"
-									id="submit"
-									class="button is-link"
-								/>
-							</div>
+					</div>
+					<div class="one">
+						<label class="checkbox"></label>
+						<input type="checkbox" name="terms" id="terms" required>&nbsp;I agree to the terms, whatever
+						they are.
+					</div>
+					<div class="field">
+						<div class="control">
+							<input type="submit" value="Submit" id="submit" class="button is-link">
 						</div>
-					</fieldset>
-				</form>
-			</div>
-		</section>
+					</div>
+				</fieldset>
+			</form>
+		</div>
 
 		<!-- register.html -->
 		<script src="js/utilities.js"></script>

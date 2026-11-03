@@ -9,33 +9,28 @@
         <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
     </head>
 
-    <header style="background-color: white;">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-            <a class="navbar-item" href="./home.html"><strong>Cat Whats-The-Facts</strong></a>
-            <a class="navbar-item" href="./home.html">Home</a>
-            <a class="navbar-item" href="./about-us.html">About Us</a>
-            <a class="navbar-item" href="./contact-us.html">Contact Us</a>
-            <a class="navbar-item" href="./register.html">Register</a>
-        </nav>
-    </header>
-
     <body>
+        <header style="background-color: white;">
+            <nav class="navbar">
+                <a class="navbar-item" href="./home.html"><strong>Cat Whats-The-Facts</strong></a>
+                <a class="navbar-item" href="./home.html">Home</a>
+                <a class="navbar-item" href="./about-us.html">About Us</a>
+                <a class="navbar-item" href="./contact-us.html">Contact Us</a>
+                <a class="navbar-item" href="./register.html">Register</a>
+            </nav>
+        </header>
+
         <section class="section">
             <div class="container">
                 <h1 class="title is-4">Cat What's-the-fact</h1>
                 <div class="field">
                     <div class="control">
-                        <input
-                            type="submit"
-                            value="New Fact"
-                            id="newCatData"
-                            class="button is-link"
-                        />
+                        <input type="submit" value="New Fact" id="newCatData" class="button is-link">
                     </div>
                 </div>
                 <p id="catFact" class="content"></p>
                 <figure class="image" style="max-width: 640px; margin:auto;">
-                    <img id="catImage"/>
+                    <img id="catImage" src="img/cat-default.jpg" alt="Cat image">
                 </figure>
                 
 

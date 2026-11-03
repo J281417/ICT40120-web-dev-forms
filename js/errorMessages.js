@@ -21,8 +21,8 @@ function addErrorMessage(id, msg) {
         // Create the span:
         span = document.createElement('span');
         span.id = newId;
-		span.className = 'error'
-		span.style.color = 'red'
+		span.className = 'error';
+		span.style.color = 'red';
         span.appendChild(document.createTextNode(msg));
         
         // Add the span to the parent:
