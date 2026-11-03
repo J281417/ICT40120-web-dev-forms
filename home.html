@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+        <!-- <link rel="stylesheet" href="css/style.css">	 -->
+        <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+    </head>
 
-<header style="background-color: white;">
-    <div>
-        <nav class="main-nav">
-            <a href="./home.html">Home</a>
-            <a href="./about-us.html">About Us</a>
-            <a href="./contact-us.html">Contact Us</a>
-            <a href="./register.html">Register</a>
+    <header style="background-color: white;">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <a class="navbar-item" href="./home.html"><strong>Cat Whats-The-Facts</strong></a>
+            <a class="navbar-item" href="./home.html">Home</a>
+            <a class="navbar-item" href="./about-us.html">About Us</a>
+            <a class="navbar-item" href="./contact-us.html">Contact Us</a>
+            <a class="navbar-item" href="./register.html">Register</a>
         </nav>
-    </div>
-</header>
+    </header>
 
-<body>
-    <div style="background-color: white;">
-        <h2>Cat What's-the-fact</h2>
-        <button id="newCatData">Get Another Fact</button>
-        <img id="catImage">
-        <p id="catFact"></p>
-    </div>
-	<script src="js/getCat.js"></script>
+    <body>
+        <section class="section">
+            <div class="container">
+                <h1 class="title is-4">Cat What's-the-fact</h1>
+                <div class="field">
+                    <div class="control">
+                        <input
+                            type="submit"
+                            value="New Fact"
+                            id="newCatData"
+                            class="button is-link"
+                        />
+                    </div>
+                </div>
+                <p id="catFact" class="content"></p>
+                <figure class="image" style="max-width: 640px; margin:auto;">
+                    <img id="catImage"/>
+                </figure>
+                
 
-</body>
-
+            </div>
+        </section>
+        <script src="js/getCat.js"></script>
+    </body>
 </html>
