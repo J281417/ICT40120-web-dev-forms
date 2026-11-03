@@ -22,10 +22,11 @@ function addErrorMessage(id, msg) {
         span = document.createElement('span');
         span.id = newId;
 		span.className = 'error'
+		span.style.color = 'red'
         span.appendChild(document.createTextNode(msg));
         
         // Add the span to the parent:
-        elem.parentNode.appendChild(span);
+        elem.parentNode.parentNode.appendChild(span);
         elem.previousSibling.className = 'error';
 
     } // End of main IF-ELSE.

@@ -26,7 +26,7 @@ function validateForm(e) {
 	if (/^[A-Z \.\-']{2,20}$/i.test(firstName.value)) {
 		removeErrorMessage('firstName');
 	} else {
-		addErrorMessage('firstName', 'Please enter your first name.');
+		addErrorMessage('firstName', 'Please enter a valid name.');
 		error = true;
 	}
 	
@@ -34,7 +34,7 @@ function validateForm(e) {
 	if (/^[\w.-]+@[\w.-]+\.[A-Za-z]{2,6}$/.test(email.value)) {
 		removeErrorMessage('email');
 	} else {
-		addErrorMessage('email', 'Please enter your email address.');
+		addErrorMessage('email', 'Please enter a valid email address.');
 		error = true;
 	}
 	
@@ -107,7 +107,7 @@ window.onload = function() {
 	// Watch for changes on the terms checkbox:
     U.addEvent(U.$('terms'), 'change', toggleSubmit);
 
-	// Enbable tooltips on the phone number:
-	U.enableTooltips('phone');
+	// Enbable tooltips:
+	U.enableTooltips('email');
     
 };

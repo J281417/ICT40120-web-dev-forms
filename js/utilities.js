@@ -73,7 +73,7 @@ var U = {
 
 		// Get the event target:
 		var target = e.target || e.srcElement;
-		target.previousSibling.lastChild.style.visibility = 'visible';
+		target.parentNode.previousElementSibling.lastElementChild.style.visibility = 'visible';
 
 	}, // End of showTooltip() function.
 
@@ -85,7 +85,7 @@ var U = {
 
 		// Get the event target:
 		var target = e.target || e.srcElement;
-		target.previousSibling.lastChild.style.visibility = 'hidden';
+		target.parentNode.previousElementSibling.lastElementChild.style.visibility = 'hidden';
 
 	} // End of hideTooltip() function.
 

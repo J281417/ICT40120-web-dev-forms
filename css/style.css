@@ -1,4 +1,4 @@
-body {
+/* body {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
 	background-color: #0E3D59;
@@ -51,8 +51,8 @@ div.one {
 	line-height:20px;
 	font-size:12px;
 	font-weight:bold;
-}
-
+} */
+/* 
 .tooltip {
 	display: block; 
 	position: absolute; 
@@ -65,20 +65,23 @@ div.one {
 	color: #FFF;
 	background-color: #88A61B;
 	border:solid 2px #0E3D59;
-}
+} */
 
+.tooltip {
+    position: absolute; 
+    visibility: hidden;
+    z-index: 10;
+    margin-left: 15px;
+    max-width: 500px; 
+    background-color: #363636;
+    color: #ffffff;
+	font-size: 14px;
+    font-weight: normal;
+}
+/* 
 .error {
 	color: #D92525;
 }
 span.error{
 	padding-left: 10px;
-}
-
-/* Added */
-
-.main-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-	gap: 10px
-}
+} */
