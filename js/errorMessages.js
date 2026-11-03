@@ -1,3 +1,5 @@
+/* exported addErrorMessage, removeErrorMessage*/
+
 // Script - errorMessages.js
 // This script defines functions for adding and removing error messages.
 

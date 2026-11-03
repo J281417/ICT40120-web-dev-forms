@@ -1,3 +1,5 @@
+/* global U, removeErrorMessage, addErrorMessage */
+
 // Script - register.js
 // This script validates a form.
 
@@ -11,13 +13,7 @@ function validateForm(e) {
 
     // Get form references:
 	var firstName = U.$('firstName');
-	var lastName = U.$('lastName');
 	var email = U.$('email');
-	var phone = U.$('phone');
-	var city = U.$('city');
-	var state = U.$('state');
-	var zip = U.$('zip');
-	var terms = U.$('terms');
 
 	// Flag variable:
 	var error = false;
@@ -35,30 +31,6 @@ function validateForm(e) {
 		removeErrorMessage('email');
 	} else {
 		addErrorMessage('email', 'Please enter a valid email address.');
-		error = true;
-	}
-	
-	// Validate the phone number:
-	if (/\d{3}[ \-\.]?\d{3}[ \-\.]?\d{4}/.test(phone.value)) {
-		removeErrorMessage('phone');
-	} else {
-		addErrorMessage('phone', 'Please enter your phone number.');
-		error = true;
-	}
-	
-	// Validate the state:
-	if (state.selectedIndex != 0) {
-		removeErrorMessage('state');
-	} else {
-		addErrorMessage('state', 'Please select your state.');
-		error = true;
-	}
-	
-	// Validate the zip code:
-	if (/^\d{5}(-\d{4})?$/.test(zip.value)) {
-		removeErrorMessage('zip');
-	} else {
-			addErrorMessage('zip', 'Please enter your zip code.');
 		error = true;
 	}
 

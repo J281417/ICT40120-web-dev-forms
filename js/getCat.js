@@ -1,5 +1,6 @@
 
 function fetchCatData() {
+    'use strict';
     var catImage = document.getElementById('catImage');
     var catFact = document.getElementById('catFact');
 
