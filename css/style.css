@@ -73,3 +73,12 @@ div.one {
 span.error{
 	padding-left: 10px;
 }
+
+/* Added */
+
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	gap: 10px
+}
