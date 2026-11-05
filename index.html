@@ -5,47 +5,46 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Home</title>
-        <!-- <link rel="stylesheet" href="css/style.css">	 -->
-        <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/newform.css">	
+        <!-- <link href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" rel="stylesheet"> -->
     </head>
 
     <body>
-        <header style="background-color: white;">
-            <nav class="navbar">
-                <a class="navbar-item" href="./index.html"><strong>Cat Whats-The-Facts</strong></a>
-                <a class="navbar-item" href="./index.html">Home</a>
-                <a class="navbar-item" href="./about-us.html">About Us</a>
-                <a class="navbar-item" href="./contact-us.html">Contact Us</a>
-                <a class="navbar-item" href="./register.html">Register</a>
-            </nav>
-        </header>
-
-        <section class="section">
-            <div class="container">
-                <h1 class="title is-4">Cat What's-the-fact</h1>
-                <div class="field">
-                    <div class="control">
-                        <input type="submit" value="New Fact" id="newCatData" class="button is-link">
-                    </div>
-                </div>
-                <p id="catFact" class="content"></p>
-                <figure class="image" style="max-width: 640px; margin:auto;">
-                    <img id="catImage" src="img/cat-default.jpg" alt="Cat image">
-                </figure>
-                
-
-            </div>
-        </section>
+		<header style="background-color: #FFFFFF; padding: 15px 20px; border-bottom: 2px solid #719E80;">
+			<nav style="display: flex; gap: 20px; align-items: center;">
+				<a href="./index.html" style="color: #3A7D53; text-decoration: none;"><strong>Cat Whats-The-Facts</strong></a>
+				<a href="./index.html" style="color: #233B2E; text-decoration: none;">Home</a>
+				<a href="./about-us.html" style="color: #233B2E; text-decoration: none;">About Us</a>
+				<a href="./contact-us.html" style="color: #233B2E; text-decoration: none;">Contact Us</a>
+				<a href="./register.html" style="color: #233B2E; text-decoration: none;">Register</a>
+			</nav>
+		</header>
         
-        <footer class="footer">
-            <div class="content">
-                <p>
-                <strong>Cat What's-the-facts</strong> by <a href="https://jgthms.com">J281417</a>. The source code is licensed
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-                </p>
-            </div>
-        </footer>
+        <div style="background-color: #FFFFFF; padding: 15px 20px;">
+            <div style="text-align: center; color: #233B2E;">
+				<h2><strong>Cat What's-the-fact</strong></h2>
+                <div class="one">
+                    <input type="submit" value="New Fact" id="newCatData" class="button is-link">
+                </div>
+                <p id="catFact" style="margin-top: 10px;"></p>
+                <figure>
+                    <img id="catImage" src="img/cat-default.jpg" alt="Cat image"  style="max-width: 400px; margin:auto;">
+                </figure>
+			</div>
+        </div>
+        
+		<footer>
+			<div class="one" style="color: #4A6B58;">
+				<p>
+					<strong>Cat What's-the-fact</strong> &copy; 2026
+				</p>
+				<p>
+					<small>
+					Random feline images and data are sourced externally from <i>thecatapi.com</i> and <i>catfact.ninja</i>.
+					</small>
+				</p>
+			</div>
+		</footer>
         <script src="js/getCat.js"></script>
     </body>
 </html>
