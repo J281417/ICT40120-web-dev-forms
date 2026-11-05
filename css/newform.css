@@ -1,16 +1,15 @@
-/* body {
+body {
 	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, Arial, Helvetica, sans-serif;
 	font-size: 12px;
-	background-color: #0E3D59;
+	background-color: #E6EFE9;
+	color: #233B2E;
 }
 
 form {
-	background-color: #ffffff;
-
+	background-color: #FFFFFF;
 	margin: 0 auto;
 	padding: 14px;
-	border: solid 2px #88A61B;
-
+	border: solid 2px #719E80;
 }
 
 div {
@@ -31,11 +30,11 @@ div.two input, div.two select{
 	float: left;
 	width: 150px;
 	text-align: left;
+	border: 1px solid #B4C8BB;
 }
 
 div.two select {
 	width: 157px;
-	
 }
 
 div.one {
@@ -46,13 +45,15 @@ div.one {
 	clear: both;
 	width: 125px;
 	height: 30px;
-	background:#F29F05;
+	background:#3A7D53;
+	color: #FFFFFF;
 	text-align:center;
 	line-height:20px;
 	font-size:12px;
 	font-weight:bold;
-} */
-/* 
+	border: none;
+}
+
 .tooltip {
 	display: block; 
 	position: absolute; 
@@ -62,26 +63,14 @@ div.one {
 	width: 10em;
 	padding: 0.5em;
 	font-weight: normal;
-	color: #FFF;
-	background-color: #88A61B;
-	border:solid 2px #0E3D59;
-} */
-
-.tooltip {
-    position: absolute; 
-    visibility: hidden;
-    z-index: 10;
-    margin-left: 15px;
-    max-width: 500px; 
-    background-color: #363636;
-    color: #ffffff;
-	font-size: 14px;
-    font-weight: normal;
+	color: #FFFFFF;
+	background-color: #233B2E;
+	border:solid 2px #719E80;
 }
-/* 
+
 .error {
-	color: #D92525;
+	color: #D32F2F;
 }
 span.error{
 	padding-left: 10px;
-} */
+}

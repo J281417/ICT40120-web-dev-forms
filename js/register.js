@@ -60,8 +60,10 @@ function toggleSubmit() {
 	// Toggle its disabled property:
 	if (U.$('terms').checked) {
 		submit.disabled = false;
+		submit.style.opacity = 1;
 	} else {
 		submit.disabled = true;
+		submit.style.opacity = 0.5;
 	}
 	
 } // End of toggleSubmit() function.
@@ -75,6 +77,7 @@ window.onload = function() {
 
 	// Disable the submit button to start:
 	U.$('submit').disabled = true;
+	U.$('submit').style.opacity = 0.5;
 
 	// Watch for changes on the terms checkbox:
     U.addEvent(U.$('terms'), 'change', toggleSubmit);
